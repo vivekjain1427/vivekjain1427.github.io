@@ -23,10 +23,11 @@ setindicator("#ccc");
 // set Password Length and show it to UI
 function handleSlider(){
     inputSlider.value = passwordLength;
-    lengthDisplay.innerText =passwordLength; 
-    const min = inputSlider.min;
-    const max = inputSlider.max;
-    inputSlider.style.backgroundColor =((passwordLength- min) * 100 / (max-min)) + "%100"
+  lengthDisplay.innerText = passwordLength;
+  const min = inputSlider.min;
+  const max = inputSlider.max;
+  inputSlider.style.backgroundSize =
+    ((passwordLength - min) * 100) / (max - min) + "% 100%";
 };
 
 // Strength
