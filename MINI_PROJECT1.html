@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Project -1 JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./project.css">
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+</head>
+<body>
+    <div class="container">
+        <!-- heading -->
+        <h1>PASSWORD GENERATOR</h1>
+ 
+        <!-- Input Display -->
+        <div class="displaycontainer">
+            <input class="Display" readonly placeholder="PASSWORD" PassDisplay>
+
+            <button class="datacopy">
+                <span class="Copied-Message"></span>
+                <img src="./copy_clipboard_button.png" alt="copy" width="27" height="25">
+            </button>
+        </div>
+
+        <!-- User Needs for Password -->
+        <div class="InputContainer">
+            
+            
+            <div class="PassLength">
+              <p >Password Length</p>
+              <p class="DataLength">0</p>
+            </div>  
+        
+            <!-- Slider -->
+            <input class="slider" type="range" min="1" max="20" step="1" DataLengthSlider>
+
+            <!-- Checkboxes -->
+                <div class="check">
+                    <input type="checkbox" id="Uppercase">
+                    <label for="Uppercase">Include Uppercase Letters</label>
+
+                </div> 
+                <div class="check">
+                    <input type="checkbox" id="Lowercase">
+                    <label for="Lowercase">Include Lowercase Letters</label>
+
+                </div> 
+                <div class="check">
+                    <input type="checkbox"  id="Numbers">
+                    <label for="Numbers">Include Numbers</label>
+
+                </div> 
+                <div class="check">
+                    <input type="checkbox" id="Symbols">
+                    <label for="Symbols">Include Symbols</label>
+
+                </div> 
+            
+
+            <!-- Showing Password Strength -->
+            <div class="strengthcontainer">
+                <p class="PStrength">Strength</p>
+                
+                <div class="StrengthIndicator"></div>
+            </div>
+
+            <!-- Password Generator Button -->
+            <!-- <button class="PassGenerator">GENERATE PASSWORD</button> -->
+            <button class="PasswordGenerator">GENERATE PASSWORD</button>
+            <!-- <button class="generateButton">Generate Password</button> -->
+        </div>
+    </div>
+    <script src="./project.js"></script>
+    <!-- <script src="./babbar.js"></script> -->
+</body>
+</html>
