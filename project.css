@@ -22,7 +22,17 @@
 
 }
 
-@media only screen and (max-width:600px)
+@media only screen and (max-width:600px){
+    body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* you can took any bg color from angry tools */
+    background-color:"Yellow";
+}
 body{
     width: 100vw;
     height: 100vh;
@@ -32,6 +42,8 @@ body{
     justify-content: center;
     /* you can took any bg color from angry tools */
     background: linear-gradient(90deg, rgba(45, 170, 133, 0.98) 20%, rgba(76, 175, 80, 1) 77%);
+}
+
 }
 
 .container{
