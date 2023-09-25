@@ -103,7 +103,7 @@ h1 {
 }
 
 .InputContainer{
-    width: 51.6vh;
+    width: 100;
     background-color:darkcyan;
     border-radius: 1rem;
     padding: 2rem;
